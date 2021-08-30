@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"l content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="assets/tc.png">
+</head>
+<body>
+    <h1>Password Generator</h1>
+    <div class="container">
+        <label id="capacity">Length: 25</label>
+        <input id="count"  type="range" value="25" min="0" max="50" step="1">
+        <br>
+        <div class="settings">
+                Symbols:<input checked="true"   id="symbol" type="checkbox">
+                Cap Letters: <input checked="true"   id="cap" type="checkbox">
+                Low Letters: <input  checked="true" id="low" type="checkbox">
+                numbers: <input checked="true"  id="num" type="checkbox">
+        </div>
+        <br>
+        <button id="generate">Generate</button>
+        <br>
+        <div id="pass-container">
+            <input id="pass" type="text" readonly>
+            <button id="copy">Copy</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
